@@ -6,10 +6,10 @@ This project is a Python-based sentiment analysis tool that allows you to analyz
 
 ## Features
 
-Sentiment analysis of text data: The tool utilizes OpenAI's ChatGPT model to analyze the sentiment of text entries.
-Customizable sentiment labels: You can define your own sentiment labels to suit your specific use case.
-Command-line interface: The tool provides a command-line interface for easy interaction and usage with progress bar included.
-Output visualization: The analyzed dataset is saved as a CSV file with an additional column for sentiment labels.
+-   Sentiment analysis of text data: The tool utilizes OpenAI's ChatGPT model to analyze the sentiment of text entries.
+-   Customizable sentiment labels: You can define your own sentiment labels to suit your specific use case.
+-   Command-line interface: The tool provides a command-line interface for easy interaction and usage with progress bar included.
+    Output visualization: The analyzed dataset is saved as a CSV file with an additional column for sentiment labels.
 
 ## Customization
 
