@@ -76,8 +76,8 @@ def perform_sentiment_analysis(text):
 
 while True:
     try:
-        print('-- WARNING: column destinated for the analysis must be named "text" --')
         data = input('Enter your Data (.csv file): ')
+        column = input('Enter the name of the column to analyse: ')
         
         if data.upper() == 'QUIT' :
             print('-- EXITING --')
@@ -86,10 +86,10 @@ while True:
         dataset = pd.read_csv(data)
 
         for i, row in tqdm(dataset.iterrows(), total=len(dataset), desc='Processing'):
-            text = row['text']
+            text = row[column]
             sentiment_label = perform_sentiment_analysis(text)
             dataset.loc[i, 'Sentiment'] = sentiment_label
-            time.sleep(2)  # Add a delay of 2 seconds between API calls
+            time.sleep(1)  # Add a delay of 1 seconds between API calls
         break
  
     except FileNotFoundError:
