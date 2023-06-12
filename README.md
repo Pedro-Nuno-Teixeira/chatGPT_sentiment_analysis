@@ -19,7 +19,7 @@ Sentiment labels: You can customize the sentiment labels by modifying the sentim
 
 ## Data
 
-The data used was generated for testing pourposes. For a quick trial, I provide a small file and a big one, both with the respective results of the analysis performed. If you want to run the the scrip yourself, you can use the 'sample.csv' file. 
+The data used was generated for testing pourposes. For a quick trial, I provide a very small dataset and a bigger one, both with the respective results of the analysis performed. If you want to run the the scrip yourself, you can use the 'sample.csv' file or simply delete the "sentiment" column: 
 
 -   data.csv
 -   mini_data.csv
