@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-This project is a Python-based sentiment analysis tool that allows you to analyze the sentiment of text data using OpenAI's ChatGPT model. It takes a CSV file as input, processes each text entry in the file, and assigns a sentiment label to each entry (negative, neutral, or positive).
+This project is a Python-based sentiment analysis tool that allows you to analyze the sentiment of text data using OpenAI's ChatGPT model (engine of choice was "text-davinci-003"). It takes a CSV file as input, processes each text entry in the file, and assigns a sentiment label to each entry (negative, neutral, or positive) in a new column called "sentiment". While the script is initially designed to work seamlessly with CSV files, it can be easily adapted to handle various file formats, granting you the flexibility to use it with the data sources of your preference.
+
+To begin using this script effectively, you will need to provide your own API key from OpenAI. It is important to mention that to avoid exceeding the rate limit usage, a sleeper function has been thoughtfully incorporated into line 92 of the script. The default setting is to wait for 1 second between each API call. This should be modified according to your specific needs and means.
 
 ## Features
 
